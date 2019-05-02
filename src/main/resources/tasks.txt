@@ -1,2 +1,4 @@
-JIRA-10001 Abc
-JIRA-10002 Abc
+source=C:\TELCEL-SDC\dev\workspace\git\ivos-changes-report
+
+JIRA-10001 Abc 1
+JIRA-10002 Abc 2
