@@ -5,7 +5,7 @@
     
     <name>ivos-changes-report</name>
     
-    <groupId>com.ivoslabs.changesreport</groupId>
+    <groupId>com.ivoslabs.changesreport</groupId> 
     <artifactId>ivos-changesreport</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
