@@ -23,21 +23,18 @@ public class Reporter {
 	for (File file : files) {
 	    System.out.println(file.getPath());
 	}
+
+    }
+    
+    
+    public void gen(String dir) {
+	List<Task> jiras = new ArrayList<>();
 	
-//	Files.find(Paths.get(path), Integer.MAX_VALUE, (filePath, fileAttr) -> {
-//	    boolean ok;
-//	    ok = true;
-//	    if (ok) {
-//		ok = fileAttr.isRegularFile() || (fileAttr.isDirectory() && !filePath.toFile().getName().equals(".svn"));
-//	    }
-//	    return ok;	
-//
-//	}).forEach(System.out::println);
     }
 
     public List<File> findFile(File dir) {
-	 List<File> list = new ArrayList<>();
-	 
+	List<File> list = new ArrayList<>();
+
 	for (File f : dir.listFiles()) {
 	    String n = f.getName();
 	    if (f.isDirectory()) {

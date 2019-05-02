@@ -4,7 +4,7 @@
 package com.ivoslabs.changesreport;
 
 
-public class Jira {
+public class Task {
     
     private String number;
     
