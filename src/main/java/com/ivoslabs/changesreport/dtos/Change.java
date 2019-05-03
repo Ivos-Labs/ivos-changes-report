@@ -1,20 +1,20 @@
 /**
  * 
  */
-package com.ivoslabs.changesreport;
+package com.ivoslabs.changesreport.dtos;
 
 public class Change {
-    
+
     private Task task;
-    
+
     private Rsc file;
-    
+
     private int initLine;
 
     private int finalLine;
-    
+
     private String description;
-    
+
     private StringBuilder content = new StringBuilder();
 
     /**
@@ -23,7 +23,7 @@ public class Change {
      * @return {@code Task} The task
      */
     public Task getTask() {
-        return this.task;
+	return this.task;
     }
 
     /**
@@ -32,7 +32,7 @@ public class Change {
      * @param task {@code Task} The task to set
      */
     public void setTask(Task task) {
-        this.task = task;
+	this.task = task;
     }
 
     /**
@@ -41,7 +41,7 @@ public class Change {
      * @return {@code Rsc} The file
      */
     public Rsc getFile() {
-        return this.file;
+	return this.file;
     }
 
     /**
@@ -50,7 +50,7 @@ public class Change {
      * @param file {@code Rsc} The file to set
      */
     public void setFile(Rsc file) {
-        this.file = file;
+	this.file = file;
     }
 
     /**
@@ -59,7 +59,7 @@ public class Change {
      * @return {@code int} The initLine
      */
     public int getInitLine() {
-        return this.initLine;
+	return this.initLine;
     }
 
     /**
@@ -68,7 +68,7 @@ public class Change {
      * @param initLine {@code int} The initLine to set
      */
     public void setInitLine(int initLine) {
-        this.initLine = initLine;
+	this.initLine = initLine;
     }
 
     /**
@@ -77,7 +77,7 @@ public class Change {
      * @return {@code int} The finalLine
      */
     public int getFinalLine() {
-        return this.finalLine;
+	return this.finalLine;
     }
 
     /**
@@ -86,7 +86,7 @@ public class Change {
      * @param finalLine {@code int} The finalLine to set
      */
     public void setFinalLine(int finalLine) {
-        this.finalLine = finalLine;
+	this.finalLine = finalLine;
     }
 
     /**
@@ -95,7 +95,7 @@ public class Change {
      * @return {@code String} The description
      */
     public String getDescription() {
-        return this.description;
+	return this.description;
     }
 
     /**
@@ -104,7 +104,7 @@ public class Change {
      * @param description {@code String} The description to set
      */
     public void setDescription(String description) {
-        this.description = description;
+	this.description = description;
     }
 
     /**
@@ -113,7 +113,7 @@ public class Change {
      * @return {@code StringBuilder} The content
      */
     public StringBuilder getContent() {
-        return this.content;
+	return this.content;
     }
 
     /**
@@ -122,9 +122,17 @@ public class Change {
      * @param content {@code StringBuilder} The content to set
      */
     public void setContent(StringBuilder content) {
-        this.content = content;
+	this.content = content;
     }
-    
-    
-    
+
+    /*
+     * (non-Javadoc)
+     * 
+     * @see java.lang.Object#toString()
+     */
+    @Override
+    public String toString() {
+	return "Change [\n  task=" + task + ", \n  file=" + file + ", \n  initLine=" + initLine + ", \n  finalLine=" + finalLine + ", \n  description=" + description + ", \n  content=\n" + content + "]";
+    }
+
 }

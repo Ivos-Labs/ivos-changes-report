@@ -1,13 +1,12 @@
 /**
  * 
  */
-package com.ivoslabs.changesreport;
-
+package com.ivoslabs.changesreport.dtos;
 
 public class Task {
-    
+
     private String number;
-    
+
     private String description;
 
     /**
@@ -16,7 +15,7 @@ public class Task {
      * @return {@code String} The number
      */
     public String getNumber() {
-        return this.number;
+	return this.number;
     }
 
     /**
@@ -25,7 +24,7 @@ public class Task {
      * @param number {@code String} The number to set
      */
     public void setNumber(String number) {
-        this.number = number;
+	this.number = number;
     }
 
     /**
@@ -34,7 +33,7 @@ public class Task {
      * @return {@code String} The description
      */
     public String getDescription() {
-        return this.description;
+	return this.description;
     }
 
     /**
@@ -43,9 +42,17 @@ public class Task {
      * @param description {@code String} The description to set
      */
     public void setDescription(String description) {
-        this.description = description;
+	this.description = description;
     }
 
-    
-    
+    /*
+     * (non-Javadoc)
+     * 
+     * @see java.lang.Object#toString()
+     */
+    @Override
+    public String toString() {
+	return "Task [number=" + number + ", description=" + description + "]";
+    }
+
 }
