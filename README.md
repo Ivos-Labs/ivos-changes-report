@@ -4,7 +4,7 @@ The changes-report.jar generates an excel with all the changes found by task / r
 
 
 
-1. **Expected Comments format**
+1. **Expected Comment format**
      - **When multiple lines was modified**
        - At the begining of a new/modified block code
          ```
@@ -15,8 +15,7 @@ The changes-report.jar generates an excel with all the changes found by task / r
           ```
              task_id task_title]
             ```
-    
-       - **When only one line was changed**
+     - **When only one line was changed**
             ```
             task_id task_title
             change_description
