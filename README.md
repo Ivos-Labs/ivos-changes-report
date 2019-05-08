@@ -1,5 +1,7 @@
 # ivos-changes-report
-Create changes report
+
+The changes-report.jar generates an excel with all the changes found by task / requirement / jira / etc, using comments within files of a specified directory
+
 
 
 Expected format
