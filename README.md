@@ -119,8 +119,8 @@ change_description
 
 |                           File                                 | Project/Component   |   Detail        |
 | :---                                                           |     :---:           |          ---:   |
-| ivos-changes-report/src/main/java/com/ivoslabs/**Main.java**   | ivos-changes-report | Description<br> _line: 98_ `if (cond...`  |
-| ivos-changes-report/**pom.xml**                                | ivos-changes-report | Description _line: 32_ `<version>...` |
+| ivos-changes-report/src/main/java/com/ivoslabs/<br>**Main.java**   | ivos-changes-report | Description<br> line: 98 `if (cond...`  |
+| ivos-changes-report/<br>**pom.xml**                                | ivos-changes-report | Description<br> line: 32 `<version>...` |
 
 
 
