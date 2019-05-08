@@ -51,7 +51,7 @@ change_description
     <tag>         <!-- added/modified lines -->
         <subtag>  <!-- added/modified lines -->
         </subtag> <!-- added/modified lines -->
-     </tag>       <!-- added/modified lines -->
+    </tag>       <!-- added/modified lines -->
     <!-- JIRA-12345] -->
 ```
 
@@ -72,7 +72,7 @@ change_description
 ```bat    
     :: JIRA-12345 Jira title [
     :: Change description
-    mvn clean ...
+    call clean ...
     xcopy ...
     xcopy ...
     :: JIRA-12345]
@@ -99,7 +99,7 @@ change_description
     JIRA-10003 Title 3
 ```
 
-**Tree**
+**Folder Tree**
 
     -changes-report.jar
     -tasks.txt
