@@ -4,9 +4,9 @@ The changes-report.jar generates an excel with all the changes found by task / r
 
 
 
-Expected format
+**Comments expected format**
 
-   When multiple lines was modified
+   **When multiple lines was modified**
    At the begining of a new/modified block code
 ```   
     id title  [
@@ -18,7 +18,7 @@ Expected format
     id title]
 ```    
     
-   When only one line was changed
+   **When only one line was changed**
 ```
 id title
 change_description
