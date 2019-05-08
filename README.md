@@ -10,25 +10,25 @@ The changes-report.jar generates an excel with all the changes found by task / r
    
    At the begining of a new/modified block code
 ```   
-    id title  [
+    task_id taks_title  [
     change_description
 ```    
   
    At the end of a new/modified block code
 ```   
-    id title]
+    task_id task_title]
 ```    
     
    **When only one line was changed**
 ```
-id title
+task_id task_title
 change_description
 ```
         
         
         
 
- **E.g 1 when multiple lines was modified**
+ **E.g. 1 When multiple lines was modified**
 
    `.java, .js`
     
@@ -79,7 +79,7 @@ change_description
 ```
 
 
- **E.g 2 when only one line was changed**
+ **E.g. 2 When only one line was changed**
 
 ```JAVA     
     // JIRA-12345 Jira title 
@@ -109,7 +109,7 @@ change_description
 
 **Execution**
    
-   The following statment will generate `n` excel files (one for each task/jira/etc in `tasks.txt`) 
+   The following statment will generate `n` excel files one for each task/jira/etc in `tasks.txt`
 ```bash
     $ java -jar changes-report.jar
 ```
