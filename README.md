@@ -21,35 +21,28 @@ The changes-report.jar generates an excel with all the changes found by task / r
             change_description
          ```
         
-        
-        
-
- **E.g. 1 When multiple lines was modified**
-
-   `.java, .js`
-    
-```JAVA    
-    // JIRA-12345 Jira title [
-    // Change description
-    if (cond1.... // added/modified lines 
-                  // added/modified lines 
-    else {...     // added/modified lines 
-                  // added/modified lines 
-    // JIRA-12345]
-```
-
-
-   `.xml`
-    
-```xml    
-    <!-- JIRA-12345 Jira title [ -->
-    <!-- Change description -->
-    <tag>         <!-- added/modified lines -->
-        <subtag>  <!-- added/modified lines -->
-        </subtag> <!-- added/modified lines -->
-    </tag>        <!-- added/modified lines -->
-    <!-- JIRA-12345] -->
-```
+2. **Examples**         
+     - **When multiple lines was modified**
+       - For `.java, .js` 
+         ```JAVA    
+         // JIRA-12345 Jira title [
+         // Change description
+         if (cond1.... // added/modified lines 
+                       // added/modified lines 
+         else {...     // added/modified lines 
+                       // added/modified lines 
+         // JIRA-12345]
+         ```
+       - For `.xml`     
+         ```xml    
+              <!-- JIRA-12345 Jira title [ -->
+              <!-- Change description -->
+              <tag>         <!-- added/modified lines -->
+                  <subtag>  <!-- added/modified lines -->
+                  </subtag> <!-- added/modified lines -->
+              </tag>        <!-- added/modified lines -->
+              <!-- JIRA-12345] -->
+          ```
 
 
    `.properties, .sh`
@@ -95,7 +88,7 @@ The changes-report.jar generates an excel with all the changes found by task / r
     JIRA-10003 Title 3
 ```
 
-**Folder Tree**
+**Expected folder content**
 
     -changes-report.jar
     -tasks.txt
