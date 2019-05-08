@@ -8,15 +8,17 @@ Expected format
 
    When multiple lines was modified
    At the begining of a new/modified block code
-    `id title  [`
-    `change_description`
+    id title  [
+    change_description
   
    At the end of a new/modified block code
-    `id title]`
+    id title]
     
    When only one line was changed
-  `id title`
-    `change_description`
+```
+id title
+```
+        change_description
 
  E.g 1 when multiple lines was modified
 
