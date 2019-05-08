@@ -22,3 +22,11 @@ Expected format
     
     
     
+ tasks.txt file example
+ 
+    source=C:\IVOS-SDC\dev\workspace\projects\ivos-changes-report\
+
+    JIRA-10001 Title 1
+
+    #JIRA-10002 Title 2
+    JIRA-10003 Title 3
