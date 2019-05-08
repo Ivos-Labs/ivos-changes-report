@@ -82,10 +82,11 @@ The changes-report.jar generates an excel with all the changes found by task / r
 ```
 
 4. **Expected folder content**
-
-    -changes-report.jar
-    -tasks.txt
-    -Template.xlsx
+   
+   Folder 
+   ├───changes-report.jar
+   ├───tasks.txt
+   └───Template.xlsx
     
 
 
