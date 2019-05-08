@@ -7,6 +7,7 @@ The changes-report.jar generates an excel with all the changes found by task / r
 **Comments expected format**
 
    **When multiple lines was modified**
+   
    At the begining of a new/modified block code
 ```   
     id title  [
@@ -24,8 +25,10 @@ id title
 change_description
 ```
         
+        
+        
 
- E.g 1 when multiple lines was modified
+ **E.g 1 when multiple lines was modified**
 
 ```JAVA    
     // JIRA-12345 Jira title [
@@ -37,7 +40,7 @@ change_description
     // JIRA-12345]
 ```
 
- E.g 2 when only one line was changed
+ **E.g 2 when only one line was changed**
 
 ```JAVA     
     // JIRA-12345 Jira title 
@@ -46,7 +49,7 @@ change_description
 ```
     
     
- tasks.txt file example
+ **`tasks.txt` file example**
 
 ```properties
     source=C:\IVOS-SDC\dev\workspace\projects\ivos-changes-report\
@@ -57,7 +60,7 @@ change_description
     JIRA-10003 Title 3
 ```
 
-Tree
+**Tree**
 
     -changes-report.jar
     -tasks.txt
@@ -65,7 +68,7 @@ Tree
     
 
 
-Execution
+**Execution**
 
 ```bash
     $ java -jar changes-report.jar
