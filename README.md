@@ -9,18 +9,19 @@ Expected format
 ```JAVA    
     // JIRA-12345 Jira title [
     // Change description
-    if (value.... // added/modified lines 
-    
-    else {...
+    if (cond1.... // added/modified lines 
+                  // added/modified lines 
+    else {...     // added/modified lines 
+                  // added/modified lines 
     // JIRA-12345]
 ```
 
  E.g 2 when only one line was changed
 
-```JAVA  
+```JAVA     
     // JIRA-12345 Jira title 
     // Change description
-    if (value.... // added/modified line
+    if (cond0 && cond1.... // added/modified line
 ```
     
     
