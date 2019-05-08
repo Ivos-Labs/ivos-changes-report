@@ -105,7 +105,7 @@ The changes-report.jar generates an excel with all the changes found by task / r
 
 |                           File                                 | Project/Component   |   Detail        |
 | :---                                                           |     :---:           |          ---:   |
-| module-x/src/main/java/com/ivoslabs/<br>**Main.java**   | modele-x | Description<br> line: 98 `if (cond...`  |
+| module-x/src/main/java/com/ivoslabs/<br>**Main.java**   | module-x | Description<br> line: 98 `if (cond...`  |
 | module-y/<br>**pom.xml**                                | module-y | Description<br> line: 32 `<version>...` |
 
 
