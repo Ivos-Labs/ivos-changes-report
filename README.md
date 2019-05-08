@@ -8,13 +8,13 @@ The changes-report.jar generates an excel with all the changes found by task / r
 
    **When multiple lines was modified**
    
-      At the begining of a new/modified block code
+   At the begining of a new/modified block code
 ```   
     id title  [
     change_description
 ```    
   
-      At the end of a new/modified block code
+   At the end of a new/modified block code
 ```   
     id title]
 ```    
@@ -109,7 +109,7 @@ change_description
 
 **Execution**
    
-   The following statment will generate `n` (one per each task/jira/etc in `tasks.txt`) excel files
+   The following statment will generate `n` excel files (one per each task/jira/etc in `tasks.txt`) 
 ```bash
     $ java -jar changes-report.jar
 ```
