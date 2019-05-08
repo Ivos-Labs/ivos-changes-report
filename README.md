@@ -51,7 +51,7 @@ change_description
     <tag>         <!-- added/modified lines -->
         <subtag>  <!-- added/modified lines -->
         </subtag> <!-- added/modified lines -->
-    </tag>       <!-- added/modified lines -->
+    </tag>        <!-- added/modified lines -->
     <!-- JIRA-12345] -->
 ```
 
@@ -113,4 +113,14 @@ change_description
 ```bash
     $ java -jar changes-report.jar
 ```
+
+**Excel**
+
+|      File                                                  | Project/Component   |   Detail                  |
+| :---                                                       |     :---:           |          ---:             |
+| ivos-changes-report/src/main/java/com/ivoslabs/Main.java   | ivos-changes-report | Desc line: n if (cond...  |
+| ivos-changes-report/pom.xml                                | ivos-changes-report | Desc line: n <version>... |
+
+
+
 
