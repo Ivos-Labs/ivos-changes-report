@@ -100,6 +100,7 @@ The changes-report.jar generates an excel with all the changes found by task / r
 ```
 
 6. **Excel**
+
    The excel will contain a table with files, projects and the detail of the changes
 
 |                           File                                 | Project/Component   |   Detail        |
