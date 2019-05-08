@@ -34,4 +34,18 @@ Expected format
     #JIRA-10002 Title 2
     JIRA-10003 Title 3
 ```
- 
+
+Tree
+
+    -changes-report.jar
+    -tasks.txt
+    -Template.xlsx
+    
+
+
+Execution
+
+```bash
+    $ java -jar changes-report.jar
+```
+
