@@ -6,14 +6,17 @@ The changes-report.jar generates an excel with all the changes found by task / r
 
 Expected format
 
-    When multiple lines was modified
-    At the begining of a new/modified code
+   When multiple lines was modified
+   At the begining of a new/modified block code
     `id title  [`
     `change_description`
   
-    At the end of a new/modified code
+   At the end of a new/modified block code
     `id title]`
-  
+    
+   When only one line was changed
+  `id title`
+    `change_description`
 
  E.g 1 when multiple lines was modified
 
