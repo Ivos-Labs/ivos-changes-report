@@ -109,7 +109,7 @@ change_description
 
 **Execution**
    
-   The following statment will generate `n` excel files (one per each task/jira/etc in `tasks.txt`) 
+   The following statment will generate `n` excel files (one for each task/jira/etc in `tasks.txt`) 
 ```bash
     $ java -jar changes-report.jar
 ```
