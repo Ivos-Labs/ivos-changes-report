@@ -91,7 +91,7 @@ change_description
  **`tasks.txt` file example**
 
 ```properties
-    source=C:\IVOS-SDC\dev\workspace\projects\ivos-changes-report\
+    source=C:\IVOS-SDC\dev\workspace\projects\project-a-parent\
 
     JIRA-10001 Title 1
 
@@ -119,8 +119,8 @@ change_description
 
 |                           File                                 | Project/Component   |   Detail        |
 | :---                                                           |     :---:           |          ---:   |
-| ivos-changes-report/src/main/java/com/ivoslabs/<br>**Main.java**   | ivos-changes-report | Description<br> line: 98 `if (cond...`  |
-| ivos-changes-report/<br>**pom.xml**                                | ivos-changes-report | Description<br> line: 32 `<version>...` |
+| module-x/src/main/java/com/ivoslabs/<br>**Main.java**   | modele-x | Description<br> line: 98 `if (cond...`  |
+| module-y/<br>**pom.xml**                                | module-y | Description<br> line: 32 `<version>...` |
 
 
 
