@@ -1,4 +1,3 @@
-#source=C:\TELCEL-SDC\dev\workspace\git\ivos-changes-report
 source=C:\IVOS-SDC\dev\workspace\projects\ivos-changes-report\src\main\resources\test
 
 JIRA-10001 Abc 1
