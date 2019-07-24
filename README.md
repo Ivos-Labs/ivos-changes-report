@@ -93,7 +93,7 @@ The changes-report.jar generates an excel with all the changes found by task / r
     source=C:\IVOS-SDC\dev\workspace\projects\project-a-parent\
 
     JIRA-10001 Title 1
-
+    #The current and the next line will be ignored for starting with a hash
     #JIRA-10002 Title 2
     JIRA-10003 Title 3
 ```
