@@ -1,6 +1,6 @@
 # ivos-changes-report
 
-The changes-report.jar generates an excel with all the changes found by task / requirement / jira / etc, using comments within the files of a specified directory
+The changes-report.jar generates an excel with all the changes found by task / requirement / jira / etc, using the comments within the files (.java, .js, .xml, .properties, .sh, .bat) of a specified directory
 
 
 
@@ -67,6 +67,23 @@ The changes-report.jar generates an excel with all the changes found by task / r
          // JIRA-12345 Jira title 
          // Change description
          if (cond0 && cond1.... // added/modified line
+         ```
+        - For `.xml`     
+         ```xml    
+         <!-- JIRA-12345 Jira title -->
+         <!-- Change description -->
+         <tag value="true">  <!-- added/modified lines -->
+          ```
+       - For `.properties, .sh`  
+         ```properties    
+         # JIRA-12345 Jira title 
+         # Change description
+         ```
+       - For `.bat` 
+         ```bat    
+         :: JIRA-12345 Jira title 
+         :: Change description
+         xcopy ...
          ```
     
     
