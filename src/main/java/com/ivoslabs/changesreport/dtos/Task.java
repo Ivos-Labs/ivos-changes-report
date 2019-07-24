@@ -3,6 +3,11 @@
  */
 package com.ivoslabs.changesreport.dtos;
 
+/**
+ * 
+ * @author www.ivoslabs.com
+ *
+ */
 public class Task {
 
     private String number;

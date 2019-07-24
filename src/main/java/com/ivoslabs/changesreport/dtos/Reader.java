@@ -4,7 +4,7 @@
 package com.ivoslabs.changesreport.dtos;
 
 /**
- * @author VI9XXL8
+ * @author www.ivoslabs.com
  *
  */
 public class Reader {

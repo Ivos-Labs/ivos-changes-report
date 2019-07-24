@@ -6,7 +6,7 @@ package com.ivoslabs.changesreport.dtos;
 import java.io.File;
 
 /**
- * @author VI9XXL8
+ * @author www.ivoslabs.com
  *
  */
 public class Rsc {

@@ -18,6 +18,11 @@ import com.ivoslabs.changesreport.dtos.Rsc;
 import com.ivoslabs.changesreport.dtos.Task;
 import com.ivoslabs.changesreport.excel.Excel;
 
+/**
+ * 
+ * @author www.ivoslabs.com
+ *
+ */
 public class Reporter {
 
     /** */

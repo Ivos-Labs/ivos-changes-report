@@ -15,23 +15,38 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import com.ivoslabs.changesreport.dtos.Change;
 
+/**
+ * 
+ * @author www.ivoslabs.com
+ *
+ */
 public class Excel {
-    private static final int FIRS_ROW = 12;
-    private static final int LAST_ROW = 34;
 
+    /** */
+    private static final int FIRS_ROW = 12;
+
+    /** */
+    private static final int LAST_ROW = 54;
+
+    /**
+     * 
+     * @param changes
+     * @param path
+     * @param title
+     */
     public void write(List<Change> changes, String path, String title) {
 	try {
 	    XSSFWorkbook wb = getWorkbook();
 	    XSSFSheet sheet = getSheetByWorkbook(wb, 2);
 	    sheet.getRow(3).getCell(2).setCellValue(title);
-	    int last = changes.size() > 53 ? 54 : 12 + changes.size() - 1;
-	    for (int i = 12; i <= last; i++) {
+	    int last = changes.size() >= LAST_ROW ? LAST_ROW : FIRS_ROW + changes.size() - 1;
+	    for (int i = FIRS_ROW; i <= last; i++) {
 		Row row = sheet.getRow(i);
 		Cell cell1 = row.getCell(1);
 		Cell cell2 = row.getCell(2);
 		Cell cell3 = row.getCell(3);
 		Cell cell4 = row.getCell(4);
-		Change crow = changes.get(i - 12);
+		Change crow = changes.get(i - FIRS_ROW);
 		cell1.setCellValue(createRichTextStringFile(crow.getFile().getParentPath() + "\n" + crow.getFile().getName(), wb));
 		cell2.setCellValue("");
 		cell3.setCellValue(crow.getFile().getProject());
@@ -46,7 +61,13 @@ public class Excel {
 	}
     }
 
-    /** * * @param file * @param wb * @return */
+    /**
+     * 
+     * @param file
+     * @param wb
+     * @return
+     */
+    @SuppressWarnings("deprecation")
     private RichTextString createRichTextStringFile(String file, XSSFWorkbook wb) {
 	Font boldFont = wb.createFont();
 	boldFont.setCharSet(FontCharset.EASTEUROPE.getValue());
@@ -56,6 +77,13 @@ public class Excel {
 	return richString;
     }
 
+    /**
+     * 
+     * @param description
+     * @param wb
+     * @return
+     */
+    @SuppressWarnings("deprecation")
     private RichTextString createRichTextString(String description, XSSFWorkbook wb) {
 	short point = 9;
 	description = description.replaceAll("\t", "  ");
@@ -85,7 +113,7 @@ public class Excel {
     }
 
     private List<Index> getIndexOfLinea(String description) {
-	List<Index> index = new ArrayList();
+	List<Index> index = new ArrayList<>();
 	while (description.lastIndexOf("Line") != -1) {
 	    int indexOfLinea = description.lastIndexOf("Line");
 	    Index ind = new Index();

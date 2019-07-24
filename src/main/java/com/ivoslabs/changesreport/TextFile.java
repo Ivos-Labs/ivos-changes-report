@@ -4,7 +4,6 @@
 package com.ivoslabs.changesreport;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.function.BiConsumer;
@@ -13,7 +12,7 @@ import com.ivoslabs.changesreport.dtos.Reader;
 import com.ivoslabs.changesreport.dtos.Rsc;
 
 /**
- * @author VI9XXL8
+ * @author www.ivoslabs.com
  *
  */
 public class TextFile {

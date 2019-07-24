@@ -4,7 +4,7 @@
 package com.ivoslabs.changesreport;
 
 /**
- * @author www.ivos.mx
+ * @author www.ivoslabs.com
  *
  */
 public class ChangesReportExcecption extends RuntimeException {

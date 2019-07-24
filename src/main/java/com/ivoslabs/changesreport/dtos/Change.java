@@ -3,6 +3,11 @@
  */
 package com.ivoslabs.changesreport.dtos;
 
+/**
+ * 
+ * @author www.ivoslabs.com
+ *
+ */
 public class Change {
 
     private Task task;
@@ -95,7 +100,7 @@ public class Change {
      * @return {@code String} The description
      */
     public String getDescription() {
-	return this.description;
+	return this.description != null ? this.description : "";
     }
 
     /**
