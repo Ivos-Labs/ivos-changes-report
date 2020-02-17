@@ -5,7 +5,7 @@ The changes-report.jar generates an excel with all the changes found by task / r
 
 
 1. **Expected Comment format**
-     - **When multiple lines was modified**
+     - **When multiple lines were modified**
        - At the begining of a new/modified code block
          ```
              task_id taks_title  [
@@ -22,7 +22,7 @@ The changes-report.jar generates an excel with all the changes found by task / r
          ```
         
 2. **Examples**         
-     - **When multiple lines was modified**
+     - **When multiple lines were modified**
        - For `.java, .js` 
          ```JAVA    
          // JIRA-12345 Jira title [
