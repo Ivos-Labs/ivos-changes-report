@@ -18,6 +18,6 @@ public class ChangesReportExcecption extends RuntimeException {
      * @param string
      */
     public ChangesReportExcecption(String string) {
-	super(string);
+        super(string);
     }
 }
