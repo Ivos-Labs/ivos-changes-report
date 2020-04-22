@@ -7,6 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
+import java.util.TimeZone;
 import java.util.function.BiConsumer;
 import java.util.stream.Collectors;
 
@@ -28,17 +29,17 @@ public class Reporter {
 
     /** */
     private static final Logger LOGGER = LoggerFactory.getLogger(Reporter.class);
-    
-    {
 
+    static {
+        Locale.setDefault(Locale.ENGLISH);
+        TimeZone.setDefault(TimeZone.getTimeZone("America/Mexico_City"));
     }
-    
+
     private static final String IGNORE = ",.class,.log,.ctxt,.mtj.tmp,.jar,.war,.nar,.ear,.zip,.tar.gz,.rar,.factorypath,.project,.classpath,.svn,.apt_generated,.apt_generated_tests,.settings,target,logs,bin";
 
     private List<String> ignore = Arrays.asList(IGNORE.split(","));
 
     public static void main(String[] args) throws IOException {
-        Locale.setDefault(Locale.ENGLISH);
         new Reporter().gen();
     }
 
