@@ -19,23 +19,23 @@ public class TextFile {
 
     public void readFile(Rsc resource, BiConsumer<Reader, String> byLine) {
 
-	try (BufferedReader br = new BufferedReader(new FileReader(resource.getFile()))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(resource.getFile()))) {
 
-	    String sCurrentLine;
+            String sCurrentLine;
 
-	    Reader reader = new Reader();
-	    int c = 1;
+            Reader reader = new Reader();
+            int c = 1;
 
-	    while ((sCurrentLine = br.readLine()) != null) {
-		reader.setLine(c);
-		byLine.accept(reader, sCurrentLine);
-		reader.setPrevLine(sCurrentLine);
-		c++;
-	    }
+            while ((sCurrentLine = br.readLine()) != null) {
+                reader.setLine(c);
+                byLine.accept(reader, sCurrentLine);
+                reader.setPrevLine(sCurrentLine);
+                c++;
+            }
 
-	} catch (IOException e) {
-	    throw new RuntimeException("readTextFile", e);
-	}
+        } catch (IOException e) {
+            throw new RuntimeException("readTextFile", e);
+        }
     }
 
 }
