@@ -27,7 +27,7 @@ public class Reader {
      * @return {@code int} The line
      */
     public int getLine() {
-	return this.line;
+        return this.line;
     }
 
     /**
@@ -37,7 +37,7 @@ public class Reader {
      * @param line {@code int} The line to set
      */
     public void setLine(int line) {
-	this.line = line;
+        this.line = line;
     }
 
     /**
@@ -46,7 +46,7 @@ public class Reader {
      * @return {@code boolean} The open
      */
     public boolean isOpen() {
-	return this.open;
+        return this.open;
     }
 
     /**
@@ -55,7 +55,7 @@ public class Reader {
      * @param open {@code boolean} The open to set
      */
     public void setOpen(boolean open) {
-	this.open = open;
+        this.open = open;
     }
 
     /**
@@ -64,7 +64,7 @@ public class Reader {
      * @return {@code boolean} The waitCloseTag
      */
     public boolean isWaitCloseTag() {
-	return this.waitCloseTag;
+        return this.waitCloseTag;
     }
 
     /**
@@ -73,7 +73,7 @@ public class Reader {
      * @param waitCloseTag {@code boolean} The waitCloseTag to set
      */
     public void setWaitCloseTag(boolean waitCloseTag) {
-	this.waitCloseTag = waitCloseTag;
+        this.waitCloseTag = waitCloseTag;
     }
 
     /**
@@ -82,7 +82,7 @@ public class Reader {
      * @return {@code boolean} The waitDesc
      */
     public boolean isWaitDesc() {
-	return this.waitDesc;
+        return this.waitDesc;
     }
 
     /**
@@ -91,7 +91,7 @@ public class Reader {
      * @param waitDesc {@code boolean} The waitDesc to set
      */
     public void setWaitDesc(boolean waitDesc) {
-	this.waitDesc = waitDesc;
+        this.waitDesc = waitDesc;
     }
 
     /**
@@ -100,7 +100,7 @@ public class Reader {
      * @return {@code String} The prevLine
      */
     public String getPrevLine() {
-	return this.prevLine;
+        return this.prevLine;
     }
 
     /**
@@ -110,7 +110,7 @@ public class Reader {
      * @param prevLine {@code String} The prevLine to set
      */
     public void setPrevLine(String prevLine) {
-	this.prevLine = prevLine;
+        this.prevLine = prevLine;
     }
 
     /**
@@ -119,7 +119,7 @@ public class Reader {
      * @return {@code Change} The change
      */
     public Change getChange() {
-	return this.change;
+        return this.change;
     }
 
     /**
@@ -128,7 +128,7 @@ public class Reader {
      * @param change {@code Change} The change to set
      */
     public void setChange(Change change) {
-	this.change = change;
+        this.change = change;
     }
 
 }
