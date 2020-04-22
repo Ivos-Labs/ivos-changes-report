@@ -22,7 +22,7 @@ public class Rsc {
     private File file;
 
     public Rsc() {
-	this.file = new File("tasks.txt");
+        this.file = new File("tasks.txt");
     }
 
     /**
@@ -31,7 +31,7 @@ public class Rsc {
      * @return {@code String} The project
      */
     public String getProject() {
-	return this.project;
+        return this.project;
     }
 
     /**
@@ -40,7 +40,7 @@ public class Rsc {
      * @param project {@code String} The project to set
      */
     public void setProject(String project) {
-	this.project = project;
+        this.project = project;
     }
 
     /**
@@ -49,7 +49,7 @@ public class Rsc {
      * @return {@code String} The path
      */
     public String getPath() {
-	return this.path;
+        return this.path;
     }
 
     /**
@@ -58,7 +58,7 @@ public class Rsc {
      * @param path {@code String} The path to set
      */
     public void setPath(String path) {
-	this.path = path;
+        this.path = path;
     }
 
     /**
@@ -67,7 +67,7 @@ public class Rsc {
      * @return {@code String} The name
      */
     public String getName() {
-	return this.name;
+        return this.name;
     }
 
     /**
@@ -76,7 +76,7 @@ public class Rsc {
      * @param name {@code String} The name to set
      */
     public void setName(String name) {
-	this.name = name;
+        this.name = name;
     }
 
     /**
@@ -85,7 +85,7 @@ public class Rsc {
      * @return {@code File} The file
      */
     public File getFile() {
-	return this.file;
+        return this.file;
     }
 
     /**
@@ -94,7 +94,7 @@ public class Rsc {
      * @param file {@code File} The file to set
      */
     public void setFile(File file) {
-	this.file = file;
+        this.file = file;
     }
 
     /**
@@ -103,7 +103,7 @@ public class Rsc {
      * @return {@code String} The parentPath
      */
     public String getParentPath() {
-	return this.parentPath;
+        return this.parentPath;
     }
 
     /**
@@ -112,7 +112,7 @@ public class Rsc {
      * @param parentPath {@code String} The parentPath to set
      */
     public void setParentPath(String parentPath) {
-	this.parentPath = parentPath;
+        this.parentPath = parentPath;
     }
 
     /*
@@ -122,7 +122,7 @@ public class Rsc {
      */
     @Override
     public String toString() {
-	return "Rsc [project=" + project + ", path=" + path + ", name=" + name + " ]";
+        return "Rsc [project=" + project + ", path=" + path + ", name=" + name + " ]";
     }
 
 }
