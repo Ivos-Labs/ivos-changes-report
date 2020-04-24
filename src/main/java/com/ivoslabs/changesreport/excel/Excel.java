@@ -6,7 +6,6 @@ import java.util.List;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Font;
-import org.apache.poi.ss.usermodel.FontCharset;
 import org.apache.poi.ss.usermodel.RichTextString;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFRichTextString;
@@ -67,11 +66,11 @@ public class Excel {
      * @param wb
      * @return
      */
-    @SuppressWarnings("deprecation")
     private RichTextString createRichTextStringFile(String file, XSSFWorkbook wb) {
         Font boldFont = wb.createFont();
-        boldFont.setCharSet(FontCharset.EASTEUROPE.getValue());
-        boldFont.setBoldweight((short) 700);
+
+        boldFont.setCharSet(org.apache.poi.common.usermodel.fonts.FontCharset.EASTEUROPE.getNativeId());
+        boldFont.setBold(Boolean.TRUE);
         RichTextString richString = new XSSFRichTextString(file);
         richString.applyFont(file.indexOf("\n"), file.length(), boldFont);
         return richString;
@@ -83,26 +82,42 @@ public class Excel {
      * @param wb
      * @return
      */
-    @SuppressWarnings("deprecation")
     private RichTextString createRichTextString(String description, XSSFWorkbook wb) {
+
         short point = 9;
         description = description.replaceAll("\t", "  ");
         Font boldFont = wb.createFont();
-        boldFont.setCharSet(FontCharset.EASTEUROPE.getValue());
-        boldFont.setBoldweight((short) 700);
+        boldFont.setCharSet(org.apache.poi.common.usermodel.fonts.FontCharset.EASTEUROPE.getNativeId());
+        boldFont.setBold(Boolean.TRUE);
         boldFont.setFontHeightInPoints(point);
         boldFont.setFontName("Courier New");
         Font curierNew = wb.createFont();
+        curierNew.setCharSet(org.apache.poi.common.usermodel.fonts.FontCharset.EASTEUROPE.getNativeId());
+
         curierNew.setFontHeightInPoints(point);
         curierNew.setFontName("Courier New");
         RichTextString richString = new XSSFRichTextString(description);
         if (description != null && description.length() > 0 && description.contains("Line")) {
-            richString.applyFont(description.indexOf("Line"), description.length(), curierNew);
+
+            if (description.length() <= richString.length()) {
+                richString.applyFont(description.indexOf("Line"), description.length(), curierNew);
+
+            } else {
+                richString.applyFont(description.indexOf("Line"), richString.length(), curierNew);
+
+            }
+
         }
         List<Index> indexes = getIndexOfLinea(description);
+
         for (Index index : indexes) {
             try {
-                richString.applyFont(index.getIndexa(), index.getIndexb(), boldFont);
+                if (index.getIndexb() <= richString.length()) {
+                    richString.applyFont(index.getIndexa(), index.getIndexb(), boldFont);
+                } else {
+                    richString.applyFont(index.getIndexa(), richString.length(), boldFont);
+                }
+
             } catch (Exception e) {
                 System.out.println("index a" + index.getIndexa());
                 System.out.println("index b" + index.getIndexb());
@@ -119,6 +134,7 @@ public class Excel {
             Index ind = new Index();
             ind.setIndexa(indexOfLinea);
             ind.setIndexb(indexOfLinea + 13);
+
             description = description.substring(0, indexOfLinea);
             index.add(ind);
         }
@@ -126,9 +142,6 @@ public class Excel {
     }
 
     private XSSFWorkbook getWorkbook() throws Exception {
-
-//	InputStream ExcelFileToRead = Excel.class.getResourceAsStream("/changes/control/creator/entity/-000.xlsx");
-
         XSSFWorkbook wb = new XSSFWorkbook("TASK-000-template.xlsx");
         return wb;
     }
@@ -139,9 +152,12 @@ public class Excel {
     }
 
     private void writeXLSX(String pathExcelFile, XSSFWorkbook wb) throws Exception {
+
         FileOutputStream fileOut = new FileOutputStream(pathExcelFile);
+
         Throwable localThrowable2 = null;
         try {
+
             wb.write(fileOut);
             fileOut.flush();
         } catch (Throwable localThrowable1) {
